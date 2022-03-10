@@ -1,0 +1,13 @@
+.main {
+    min-height: 100vh;
+    height: max-content;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+        url("/home_bg.jpeg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 60px;
+}

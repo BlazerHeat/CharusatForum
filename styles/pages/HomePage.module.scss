@@ -1,0 +1,34 @@
+@import "../main.module.scss";
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+        url("/home_bg.jpeg");
+}
+
+.page {
+    width: 90%;
+    height: 100%;
+
+    margin: 10px auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.title {
+    color: white;
+    border-bottom: 5px solid white;
+
+    border-radius: 1px;
+    margin: 10px 0;
+
+    cursor: default;
+}
+
+.posts {
+    width: 50%;
+    min-width: 320px;
+    max-width: 720px;
+    margin: 0 1em;
+}
