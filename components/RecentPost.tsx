@@ -16,7 +16,7 @@ function RecentPost({ author, title, desc, comments }: RecentPostData) {
                 <p>
                     <i
                         style={{ marginRight: "4px" }}
-                        className="fa fa-comment"
+                        className="fa fa-comments"
                     ></i>
                     {comments}
                 </p>

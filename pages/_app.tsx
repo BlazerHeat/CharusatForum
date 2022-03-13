@@ -13,11 +13,11 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
                 />
-                <Script src="https://kit.fontawesome.com/db7d425af0.js"></Script>
                 <title>CharusatForums</title>
             </Head>
 
             <Component {...pageProps} />
+            <Script src="https://kit.fontawesome.com/db7d425af0.js"></Script>
         </SessionProvider>
     );
 }
