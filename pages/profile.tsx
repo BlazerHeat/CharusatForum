@@ -1,7 +1,5 @@
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import LoadingPage from "../containers/LoadingPage";
 import ProfilePage from "../containers/ProfilePage";
 
@@ -18,7 +16,7 @@ function Profile() {
         return <LoadingPage />;
     }
 
-    return <ProfilePage />;
+    return <ProfilePage userData={session!}/>;
 }
 
 export default Profile;
