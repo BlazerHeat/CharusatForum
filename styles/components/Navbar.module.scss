@@ -68,7 +68,9 @@
     button {
         text-decoration: none;
         color: white;
+        margin: 0;
         padding: 3px 7px;
+        border: none;
         border-bottom: 2px solid transparent;
 
         transition: border-bottom 0.2s ease-in;

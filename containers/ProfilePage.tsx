@@ -11,11 +11,17 @@ type UserData = {
         hd: string;
         image: string;
         name: string;
+        posts: number;
+        likes: number;
+        comments: number;
     };
 };
 
 function ProfilePage({ userData }: { userData: UserData }) {
     const { databaseData } = userData;
+
+    console.log(databaseData);
+
     return (
         <>
             <Navbar />
@@ -30,15 +36,15 @@ function ProfilePage({ userData }: { userData: UserData }) {
                     </div>
                     <div className={styles["social-count"]}>
                         <div className={styles.posts}>
-                            <em>200</em>
+                            <em>{databaseData.posts}</em>
                             <p>Posts</p>
                         </div>
                         <div className={styles.comments}>
-                            <em>50</em>
+                            <em>{databaseData.comments}</em>
                             <p>Comments</p>
                         </div>
                         <div className={styles.likes}>
-                            <em>100</em>
+                            <em>{databaseData.likes}</em>
                             <p>Likes</p>
                         </div>
                     </div>

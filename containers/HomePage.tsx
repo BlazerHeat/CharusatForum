@@ -11,7 +11,7 @@ function HomePage() {
         fetch("http://localhost:3000/api/posts")
             .then((res) => res.json())
             .then((data) => {
-                setRecentPosts(data);
+                setRecentPosts(data.slice(0, 5));
             })
             .catch((err) => {
                 console.error(err);

@@ -35,7 +35,6 @@ export default NextAuth({
 
                 await Users.findOneAndUpdate({ email: user.email }, user, {
                     upsert: true,
-                    new: true,
                     setDefaultsOnInsert: true,
                 });
 
@@ -49,7 +48,7 @@ export default NextAuth({
             if (!usersData.has(token.email!)) {
                 token.databaseData = await Users.findOne(
                     { email: token.email },
-                    "name email image hd -_id"
+                    "name email image hd comments likes posts -_id"
                 );
                 usersData.set(token.email!, token.databaseData);
             } else {

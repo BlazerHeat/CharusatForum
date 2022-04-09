@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "database/dbConnection2.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "database/dbConnection2.js", "pages/posts/[postId].tsx"],
   "exclude": ["node_modules"]
 }

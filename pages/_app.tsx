@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
                 />
+                <link rel="icon" href="/logo.jpeg" />
                 <title>CharusatForums</title>
             </Head>
 

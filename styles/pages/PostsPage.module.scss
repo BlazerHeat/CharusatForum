@@ -2,8 +2,49 @@
 
 .main {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     color: white;
+
+    overflow: scroll;
+    height: 100vh;
+}
+
+.title {
+    margin-top: 10px;
+    top: 5px;
+    position: sticky;
+
+    background-color: #00011f;
+    padding: 4px 10px;
+    border-radius: 5px;
+
+    z-index: 10;
+}
+
+.create-link {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background: rgb(18, 128, 18);
+    padding: 5px 12px;
+
+    margin-right: 50px;
+
+    border-radius: 7px;
+    margin-top: 70px;
+    font-size: 2.2em;
+}
+
+.child {
+    width: 70%;
+}
+
+.posts {
+    width: 50%;
+    margin: auto;
 }

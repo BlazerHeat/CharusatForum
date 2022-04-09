@@ -1,0 +1,26 @@
+.page {
+    background: white;
+
+    width: 50%;
+    min-width: 320px;
+    margin: 1em;
+
+    border-radius: 10px;
+    padding: 1em;
+
+    p {
+        color: rgb(108, 107, 107);
+    }
+}
+
+.sub {
+    margin: 10px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        color: rgb(126, 159, 204);
+    }
+}

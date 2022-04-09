@@ -1,0 +1,23 @@
+@import "../main.module.scss";
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-link {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background: rgb(18, 128, 18);
+    padding: 5px 12px;
+
+    margin-right: 50px;
+
+    border-radius: 7px;
+    margin-top: 70px;
+    font-size: 2.2em;
+}

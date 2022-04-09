@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
+import Post from "./models/Post";
+import Posts from "./models/Posts";
 
 export default async function dbConnect() {
     const uri = process.env.DATABASE_URI;
