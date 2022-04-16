@@ -13,7 +13,7 @@ function PostsPage() {
     const [recentPosts, setRecentPosts] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/posts")
+        fetch("https://charusatforums.herokuapp.com/api/posts")
             .then((res) => res.json())
             .then((data) => {
                 setRecentPosts(data);

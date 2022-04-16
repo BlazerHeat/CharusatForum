@@ -12,7 +12,7 @@ function PostPage({ postId }: { postId: string }) {
     const [postData, setPostData] = useState();
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/posts/" + postId)
+        fetch("https://charusatforums.herokuapp.com/api/posts/" + postId)
             .then((res) => {
                 return res.json();
             })
