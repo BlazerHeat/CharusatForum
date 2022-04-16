@@ -17,7 +17,7 @@ type UserData = {
     };
 };
 
-function ProfilePage({ userData }: { userData: UserData }) {
+function ProfilePage({ userData }: { userData: any }) {
     const { databaseData } = userData;
 
     console.log(databaseData);
