@@ -21,7 +21,7 @@ function Footer() {
                 <hr />
                 <div className={styles["copyright-text"]}>
                     <p>
-                        &copy; iCoder, All rights reserved -{" "}
+                        &copy; CharusatForums, All rights reserved -{" "}
                         {new Date().getFullYear()}.
                     </p>
                 </div>
