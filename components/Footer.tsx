@@ -44,10 +44,6 @@ function Footer() {
                         <a className={styles["quick-link"]}>Carriers</a>
                     </Link>
                     <span className={styles["bullet"]}>&bull;</span>
-                    <Link href="/contact">
-                        <a className={styles["quick-link"]}>About</a>
-                    </Link>
-                    <span className={styles["bullet"]}>&bull;</span>
                     <Link href="/faq">
                         <a className={styles["quick-link"]}>FAQs</a>
                     </Link>

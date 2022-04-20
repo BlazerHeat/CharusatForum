@@ -4,6 +4,7 @@ import { getSession } from "next-auth/react";
 import Posts from "../../database/models/Posts";
 import Post from "../../database/models/Post";
 import config from "../../config.json";
+import Users from "../../database/models/User";
 
 export default async function handler(
     req: NextApiRequest,
@@ -17,8 +18,6 @@ export default async function handler(
         res.redirect("/login");
         return;
     }
-    console.log(req.body);
-    console.log(session);
     const newRecentPost = {
         author: session?.user?.name?.split(" ")[1],
         title: req.body.title,
