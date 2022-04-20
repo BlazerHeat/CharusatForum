@@ -7,22 +7,22 @@ function Footer() {
             <div className={styles["footer-container"]}>
                 <div className={styles["social-links"]}>
                     <a className={styles["footer-link"]}>
-                        <Link href="#">
+                        <Link href="#" passHref>
                             <i className="fab fa-facebook-f"></i>
                         </Link>
                     </a>
                     <a className={styles["footer-link"]}>
-                        <Link href="#">
+                        <Link href="#" passHref>
                             <i className="fab fa-instagram"></i>
                         </Link>
                     </a>
                     <a className={styles["footer-link"]}>
-                        <Link href="#">
+                        <Link href="#" passHref>
                             <i className="fab fa-twitter"></i>
                         </Link>
                     </a>
                     <a className={styles["footer-link"]}>
-                        <Link href="#">
+                        <Link href="#" passHref>
                             <i className="fab fa-discord"></i>
                         </Link>
                     </a>

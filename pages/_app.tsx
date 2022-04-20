@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
             </Head>
 
             <Component {...pageProps} />
-            <script src="https://kit.fontawesome.com/db7d425af0.js"> </script>
+            <Script src="https://kit.fontawesome.com/db7d425af0.js"> </Script>
         </SessionProvider>
     );
 }
