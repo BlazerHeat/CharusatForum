@@ -60,6 +60,16 @@ button[type="submit"]:hover,
     border: 2px solid var(--green) !important;
     color: var(--green) !important;
 }
+.typings {
+    font-size: 1.7em;
+    font-style: italic;
+}
+
+.typed-cursor {
+    animation: blink 1.25s ease-in-out infinite;
+    font-size: 1.7em;
+    margin-left: 5px;
+}
 em {
     font-weight: bold;
 }

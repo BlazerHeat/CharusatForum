@@ -1,8 +1,50 @@
 @import "../main.module.scss";
 
-.main {
-    flex-direction: row;
+.main2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: white;
+    font-size: 2em;
+
+    text-align: center;
+
+    h1 {
+        font-size: 5rem;
+    }
 }
+.typings-conatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+    font-size: 1rem;
+}
+
+
+.hero-btn {
+    text-decoration: none;
+    color: var(--green);
+    font-size: 2rem;
+    padding: 0.05em 0.5rem;
+    margin-top: 20px;
+
+    border: 0.09em solid var(--green);
+    border-radius: 1200px;
+    transition: 0.15s ease-in-out;
+}
+.hero-btn:hover {
+    color: white;
+    background: var(--green);
+}
+
 
 .form-div {
     width: 40%;

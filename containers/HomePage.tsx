@@ -5,6 +5,7 @@ import styles from "../styles/pages/HomePage.module.scss";
 import { useState, useEffect } from "react";
 import config from "../config.json";
 import CreatePostForm from "../components/CreatePostForm";
+import Link from "next/link";
 
 function HomePage() {
     const [recentPosts, setRecentPosts] = useState([]);
@@ -28,6 +29,15 @@ function HomePage() {
     return (
         <>
             <Navbar />
+            <main className={`${styles.main2} ${styles.main}`}>
+                <h1>Welcome to Charusat Forums!</h1>
+                <div className={styles["typings-conatiner"]}>
+                    <div className="typings"></div>
+                </div>
+                <Link href="/login">
+                    <a className={styles["hero-btn"]}>Get Started</a>
+                </Link>
+            </main>
             <main className={styles.main}>
                 <div className={styles.page}>
                     <h1 className={styles.title}>Recent Posts</h1>
@@ -43,6 +53,8 @@ function HomePage() {
                 </div>
             </main>
             <Footer />
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script type="text/javascript" src="/js/home.js"></script>
         </>
     );
 }
