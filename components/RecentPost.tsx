@@ -11,7 +11,7 @@ type RecentPostData = {
 
 function RecentPost({ author, title, desc, comments, _id }: RecentPostData) {
     return (
-        <Link href={`/posts/${_id}`}>
+        <Link href={`/posts/${_id}`} passHref>
             <div className={styles.wrapper}>
                 <h4 className={styles.title}>{title}</h4>
                 <p className={styles.desc}>{desc}</p>

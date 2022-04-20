@@ -11,7 +11,7 @@ function Navbar() {
             <nav className={styles.nav}>
                 <div className={styles.logo}>
                     <span className={styles["nav-logo"]}>
-                        <Image src="/logo.jpeg" width={50} height={50} />
+                        <Image src="/logo.jpeg" width={50} height={50} alt="logo"/>
                     </span>
                     <h1>Charusat Forums</h1>
                 </div>
