@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import styles from "../styles/pages/LoginPage.module.scss";
 import { signIn } from "next-auth/react";
+import config from "../config.json";
 
 function LoginPage() {
     return (
@@ -23,9 +24,14 @@ function LoginPage() {
                                 type="button"
                                 className={styles['login-btn']}
                                 onClick={() =>
+                                    {
+                                    const url = config.PRODUCTION
+                                        ? config.PRODUCTION_URL
+                                        : config.DEVELOPEMENT_URL;
                                     signIn("google", {
-                                        callbackUrl: "http://localhost:3000/",
-                                    })
+                                        callbackUrl: url,
+                                    });
+                                    }
                                 }
                             >
                                 Sign in with Google

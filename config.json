@@ -1,0 +1,5 @@
+{
+    "PRODUCTION": true,
+    "PRODUCTION_URL": "https://charusatforums.herokuapp.com",
+    "DEVELOPEMENT_URL": "http://localhost:3000"
+}

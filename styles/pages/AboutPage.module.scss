@@ -2,10 +2,197 @@
 
 .main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     div {
         color: white;
+    }
+}
+
+.head-text {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 1em 1.5em;
+
+    font-size: 2.5em;
+    margin-top: 70px;
+}
+
+.rainbow_text_animated {
+    background: linear-gradient(
+        to right,
+        #6666ff,
+        #0099ff,
+        #00ff00,
+        #ff3399,
+        #6666ff
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+.cards-container {
+    width: 350px;
+    height: 100%;
+}
+
+.card {
+    font-family: Montserrat, sans-serif;
+
+    background: #231e39;
+    padding: 1em;
+    margin: 50px 0;
+    border-radius: 5px;
+
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.75);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img {
+    border-radius: 100%;
+    width: 50%;
+
+    outline: 5px solid var(--cyan);
+    outline-offset: 3px;
+}
+
+.profile-name {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--pale);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about {
+    margin-top: 14px;
+    text-align: center;
+    color: var(--pale);
+}
+
+.profile-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container {
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.msg-btn,
+.follow-btn {
+    text-decoration: none;
+    font-family: "Brutal Type", sans-serif;
+    color: white;
+    padding: 0.5em 0.8em;
+    border-radius: 3px;
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+.msg-btn i,
+.follow-btn i {
+    margin-left: 2px;
+}
+
+.msg-btn {
+    background: #25d366;
+}
+.follow-btn {
+    margin-left: 10px;
+    background: radial-gradient(
+            circle farthest-corner at 35% 90%,
+            #fec564,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle farthest-corner at 0 140%,
+            #fec564,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 0 -25%,
+            #5258cf,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 20% -50%,
+            #5258cf,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 100% 0,
+            #893dc2,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 60% -20%,
+            #893dc2,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 100% 100%,
+            #d9317a,
+            transparent
+        ),
+        linear-gradient(
+            #6559ca,
+            #bc318f 30%,
+            #e33f5f 50%,
+            #f77638 70%,
+            #fec66d 100%
+        );
+    color: white;
+    transition: color 0.2s ease-in, background 0.2s ease-in;
+}
+
+@keyframes rainbow_animation {
+    0% {
+        background-position: 0% 82%;
+    }
+    50% {
+        background-position: 100% 19%;
+    }
+    100% {
+        background-position: 0% 82%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .follow-btn {
+        margin-left: 0;
+    }
+
+    .cards-container {
+        width: 200px;
+    }
+    .profile-name {
+        font-size: 1em;
+    }
+    .about {
+        font-size: 0.7em;
     }
 }

@@ -7,13 +7,17 @@ import Navbar from "../components/Navbar";
 import RecentPost from "../components/RecentPost";
 import styles from "../styles/pages/PostsPage.module.scss";
 import LoadingPage from "./LoadingPage";
+import config from "../config.json";
 
 function PostsPage() {
     const { data: session, status } = useSession();
     const [recentPosts, setRecentPosts] = useState([]);
 
     useEffect(() => {
-        fetch("https://charusatforums.herokuapp.com/api/posts")
+        const url = config.PRODUCTION
+            ? config.PRODUCTION_URL
+            : config.DEVELOPEMENT_URL;
+        fetch(url + "/api/posts")
             .then((res) => res.json())
             .then((data) => {
                 setRecentPosts(data);

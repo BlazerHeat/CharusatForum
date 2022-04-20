@@ -6,6 +6,37 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: #e7eeef;
+    --bg-color2: #f3f7f7;
+    --white: #fff;
+    --white2: #f3f7f7;
+    --white-high-opacity: rgba(255, 255, 255, 0.7);
+    --black: #000;
+    --black-high-opacity: rgba(0, 0, 0, 0.8);
+    --black-medium-opacity: rgba(0, 0, 0, 0.6);
+    --gray: #444444;
+    --gray-fonts: #576871;
+    --light-blue: #0078f2;
+    --light-blue-high-opacity: rgba(0, 120, 242, 0.8);
+    --blue: #005fbf;
+    --cyan: #4ad4ec;
+    --cyan-pale: #03bfbc;
+    --pale: #b3b8cd;
+    --blackish-blue: rgb(5, 17, 32);
+    --dark-blue: #231e39;
+    --purple: rgb(100, 14, 231);
+    --purple-medium-opacity: rgba(100, 14, 231, 0.63);
+    --a-link: rgb(85, 26, 139);
+    --green: #1ba94c;
+    --light-green: #75ec4a;
+    --transparent: rgba(0, 0, 0, 0);
+    --github-btn: #000;
+    --google-btn: rgb(219, 68, 55);
+    --facebook-btn: rgb(59, 89, 153);
+    --swiper-navigation-size: 30px;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;

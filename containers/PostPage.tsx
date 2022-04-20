@@ -6,13 +6,17 @@ import Navbar from "../components/Navbar";
 import Post from "../components/Post";
 import styles from "../styles/pages/PostPage.module.scss";
 import LoadingPage from "./LoadingPage";
+import config from "../config.json";
 
 function PostPage({ postId }: { postId: string }) {
     const { data: session, status } = useSession();
     const [postData, setPostData] = useState();
 
     useEffect(() => {
-        fetch("https://charusatforums.herokuapp.com/api/posts/" + postId)
+        const url = config.PRODUCTION
+            ? config.PRODUCTION_URL
+            : config.DEVELOPEMENT_URL;
+        fetch(url + "/api/posts/" + postId)
             .then((res) => {
                 return res.json();
             })
