@@ -37,6 +37,30 @@
     --swiper-navigation-size: 30px;
 }
 
+button[type="submit"] {
+    cursor: pointer;
+    padding: 0.5em 0.6em;
+    background: var(--green);
+    color: var(--white);
+
+    border: 2px solid transparent;
+    border-radius: 1200px;
+
+    font-family: "Brutal Type", "Poppins", sans-serif;
+    font-size: 1em;
+
+    margin-top: 1em;
+
+    transition: background 0.25s ease-in, border 0.25s ease-in,
+        color 0.25s ease-in;
+}
+button[type="submit"]:hover,
+.btn-active {
+    background: transparent !important;
+    border: 2px solid var(--green) !important;
+    color: var(--green) !important;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;

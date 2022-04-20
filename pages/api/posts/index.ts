@@ -14,6 +14,6 @@ export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse<Data[]>
 ) {
-    const data: any = await Posts.find();
+    const data: any = await Posts.find().sort({ _id: -1 }); ;
     res.status(200).json(data);
 }

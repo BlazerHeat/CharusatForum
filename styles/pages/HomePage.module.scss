@@ -1,5 +1,20 @@
 @import "../main.module.scss";
 
+.main {
+    flex-direction: row;
+}
+
+.form-div {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    margin-top: 70px;
+
+    textarea {
+        width: 30em;
+    }
+}
+
 .page {
     width: 90%;
     height: 100%;

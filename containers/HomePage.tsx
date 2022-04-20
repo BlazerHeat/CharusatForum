@@ -4,14 +4,15 @@ import RecentPost from "../components/RecentPost";
 import styles from "../styles/pages/HomePage.module.scss";
 import { useState, useEffect } from "react";
 import config from "../config.json";
+import CreatePostForm from "../components/CreatePostForm";
 
 function HomePage() {
     const [recentPosts, setRecentPosts] = useState([]);
 
     useEffect(() => {
-
-        const url = config.PRODUCTION ? config.PRODUCTION_URL : config.DEVELOPEMENT_URL;
-
+        const url = config.PRODUCTION
+            ? config.PRODUCTION_URL
+            : config.DEVELOPEMENT_URL;
 
         fetch(url + "/api/posts")
             .then((res) => res.json())
@@ -35,6 +36,9 @@ function HomePage() {
                             recentPosts.map((postData, i) => (
                                 <RecentPost {...postData} key={i} />
                             ))}
+                    </div>
+                    <div className={styles["form-div"]}>
+                        <CreatePostForm />
                     </div>
                 </div>
             </main>
