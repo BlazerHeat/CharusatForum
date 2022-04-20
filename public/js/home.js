@@ -1,9 +1,5 @@
 const options = {
-    strings: [
-        "iCoder a day keeps teachers away!",
-        "Use your own!",
-        "Have a great day!",
-    ],
+    strings: ["Ask your doubts", "Get answers!", "Have a great day!"],
     typeSpeed: 50,
     backSpeed: 25,
     backDelay: 1250,

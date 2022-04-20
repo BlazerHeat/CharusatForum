@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import config from "../config.json";
 import CreatePostForm from "../components/CreatePostForm";
 import Link from "next/link";
+import Image from "next/image";
 
 function HomePage() {
     const [recentPosts, setRecentPosts] = useState([]);
@@ -37,6 +38,9 @@ function HomePage() {
                 <Link href="/login">
                     <a className={styles["hero-btn"]}>Get Started</a>
                 </Link>
+                <div className={styles["img-wrapper"]}>
+                    <Image src="/down-arrow.svg" alt="arrow" width={100} height={100} />
+                </div>
             </main>
             <main className={styles.main}>
                 <div className={styles.page}>
