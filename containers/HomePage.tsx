@@ -35,11 +35,16 @@ function HomePage() {
                 <div className={styles["typings-conatiner"]}>
                     <div className="typings"></div>
                 </div>
-                <Link href="/login">
+                <Link href="/login" passHref>
                     <a className={styles["hero-btn"]}>Get Started</a>
                 </Link>
                 <div className={styles["img-wrapper"]}>
-                    <Image src="/down-arrow.svg" alt="arrow" width={100} height={100} />
+                    <Image
+                        src="/down-arrow.svg"
+                        alt="arrow"
+                        width={100}
+                        height={100}
+                    />
                 </div>
             </main>
             <main className={styles.main}>
