@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/components/Footer.module.scss";
 
 function Footer() {
@@ -5,17 +6,25 @@ function Footer() {
         <footer className={styles["footer"]}>
             <div className={styles["footer-container"]}>
                 <div className={styles["social-links"]}>
-                    <a href="#" className={styles["footer-link"]}>
-                        <i className="fab fa-facebook-f"></i>
+                    <a className={styles["footer-link"]}>
+                        <Link href="#">
+                            <i className="fab fa-facebook-f"></i>
+                        </Link>
                     </a>
-                    <a href="#" className={styles["footer-link"]}>
-                        <i className="fab fa-instagram"></i>
+                    <a className={styles["footer-link"]}>
+                        <Link href="#">
+                            <i className="fab fa-instagram"></i>
+                        </Link>
                     </a>
-                    <a href="#" className={styles["footer-link"]}>
-                        <i className="fab fa-twitter"></i>
+                    <a className={styles["footer-link"]}>
+                        <Link href="#">
+                            <i className="fab fa-twitter"></i>
+                        </Link>
                     </a>
-                    <a href="#" className={styles["footer-link"]}>
-                        <i className="fab fa-discord"></i>
+                    <a className={styles["footer-link"]}>
+                        <Link href="#">
+                            <i className="fab fa-discord"></i>
+                        </Link>
                     </a>
                 </div>
                 <hr />
@@ -27,21 +36,21 @@ function Footer() {
                 </div>
                 <hr />
                 <div className={styles["quick-links"]}>
-                    <a href="/about" className={styles["quick-link"]}>
-                        Developers
-                    </a>
+                    <Link href="/about">
+                        <a className={styles["quick-link"]}>Developers</a>
+                    </Link>
                     <span className={styles["bullet"]}>&bull;</span>
-                    <a href="/carriers" className={styles["quick-link"]}>
-                        Carriers
-                    </a>
+                    <Link href="/carriers">
+                        <a className={styles["quick-link"]}>Carriers</a>
+                    </Link>
                     <span className={styles["bullet"]}>&bull;</span>
-                    <a href="/contact" className={styles["quick-link"]}>
-                        About
-                    </a>
+                    <Link href="/contact">
+                        <a className={styles["quick-link"]}>About</a>
+                    </Link>
                     <span className={styles["bullet"]}>&bull;</span>
-                    <a href="/faq" className={styles["quick-link"]}>
-                        FAQs
-                    </a>
+                    <Link href="/faq">
+                        <a className={styles["quick-link"]}>FAQs</a>
+                    </Link>
                 </div>
             </div>
         </footer>
