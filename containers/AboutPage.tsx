@@ -142,7 +142,7 @@ function AboutPage() {
                                     <a
                                         href="https://web.whatsapp.com/send?phone=919023974622"
                                         target="_blank"
-                                        className="msg-btn"
+                                        className={styles["msg-btn"]}
                                     >
                                         Message{" "}
                                         <i className="fab fa-whatsapp"></i>
