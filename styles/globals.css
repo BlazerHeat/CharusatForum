@@ -60,7 +60,9 @@ button[type="submit"]:hover,
     border: 2px solid var(--green) !important;
     color: var(--green) !important;
 }
-
+em {
+    font-weight: bold;
+}
 body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;

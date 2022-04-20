@@ -1,0 +1,36 @@
+@import "../main.module.scss";
+
+.heading {
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom: 2px solid white;
+
+    font-family: "Brutal Type", "Poppins", sans-serif;
+    font-weight: bolder;
+    color: white;
+    margin: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 720px;
+    background: var(--bg-color2);
+    padding: 1.2em;
+
+    color: black;
+    border-radius: 10px;
+    box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--gray);
+}
