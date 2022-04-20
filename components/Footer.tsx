@@ -27,7 +27,7 @@ function Footer() {
                 </div>
                 <hr />
                 <div className={styles["quick-links"]}>
-                    <a href="/developers" className={styles["quick-link"]}>
+                    <a href="/about" className={styles["quick-link"]}>
                         Developers
                     </a>
                     <span className={styles["bullet"]}>&bull;</span>
