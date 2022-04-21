@@ -15,7 +15,7 @@ export default async function handler(
         : config.DEVELOPEMENT_URL;
     const session = await getSession({ req });
     if (!session) {
-        res.redirect("/login");
+        res.redirect(url + "/login");
         return;
     }
     const newRecentPost = {
